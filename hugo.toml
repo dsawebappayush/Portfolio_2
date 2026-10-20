@@ -1,0 +1,47 @@
+baseURL = "https://yourusername.github.io/"
+languageCode = "en-us"
+title = "Ayush"
+theme = "PaperMod"
+
+[params]
+  env = "production"
+  title = "Your Ayush"
+  description = "Software Engineer & Systems Developer"
+  author = "Your Ayush"
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  
+  # This enables the clean minimalist homepage profile mode
+  [params.profileMode]
+    enabled = true
+    title = "Hello!"
+    subtitle = "I'm a software engineer focusing on low-level systems, C++, and infrastructure. Welcome to my digital notebook."
+    imageUrl = "" # Optional: add a tiny avatar image link if you want
+    imageWidth = 120
+    imageHeight = 120
+    
+    [[params.profileMode.buttons]]
+      name = "Projects"
+      url = "/projects/"
+
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "GitHub"
+      url = "https://github.com/yourusername"
+
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
